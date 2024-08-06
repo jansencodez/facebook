@@ -1,0 +1,80 @@
+html,body{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: lightgray;
+  font-family: Arial;
+}
+/* Slide from right */
+.slide-right-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-right-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.slide-right-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Slide from left */
+.slide-left-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-left-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.slide-left-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-left-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+
+/* Page container styling */
+.page {
+  padding: 20px;
+}
+
+:root{
+  --priColor:white;
+  --secColor:rgb(20,140,244);
+  --mainBackgroundColor:lightgray;
+  --color:black;
+}
+
+div{
+  margin: 0;
+  background-color: var(--priColor);
+  color: var(--color);
+}
+ul{
+  background-color: var(--priColor);
+  color: --color;
+}
+.main{
+  background-color: var(--mainBackgroundColor);
+}

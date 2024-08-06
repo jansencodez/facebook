@@ -1,0 +1,278 @@
+
+/*add post*/
+
+.whats-on-your-mind{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items:center;
+  max-width: 100%;
+  height: 50px;
+  margin:0 0 4px;
+}
+
+.user-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 40px;
+  max-width: 40px;
+  width: 100%;
+  height: 100%;
+  flex:1;
+  border-radius: 20px;
+  outline: 1px solid lightgray;
+  margin-left:5px;
+}
+.input{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  outline: 1px solid lightgray;
+  background: white;
+  margin: 2px 20px 2px;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+.input:hover{
+  background: lightgray;
+}
+.input a{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.add-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+  flex:0;
+  margin-right: 5px;
+  color:rgb(0,180,0);
+}
+
+
+/*story section*/
+
+.story-section{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  padding:9px 0 9px;
+  justify-content:start;
+}
+.story{
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 98px;
+  flex: 0;
+  outline: 1px solid lightgray;
+  height: 170px; 
+  margin: 0 10px 0;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+.create{
+  justify-content: center;
+  align-items: center;
+}
+.create div{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.create-story{
+  background-image: linear-gradient(to top right,rgb(20,80,255),rgb(20,140,244));
+}
+
+.create-reel{
+  background-image: linear-gradient(to top right ,rgb(244,89,50),rgb(244,89,190));
+}
+
+.story-profile{
+  position: absolute;
+  top:5px;
+  left:5px;
+  height: 40px; 
+  width: 40px;
+  border-radius: 20px;
+  outline: 2px solid blue;
+}
+
+.story .story-profile-name{
+  position: absolute;
+  bottom:20px;
+  left:10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  opacity: 0.8;
+  max-width: 75px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.story-profile .viewed{
+  outline: 2px solid lightgray;
+}
+
+/*posts*/
+
+.all-post{
+  margin: 3px 0 0;
+  display: flex;
+  flex-direction: column; 
+  height: auto;
+  padding: 10px 0 10px 0;
+}
+
+.posting-profile-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 20px;
+  outline: 1px solid lightgray;
+}
+.left{
+  margin: 4px 5px 4px;
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  width:100%;
+  height: 100%;
+  flex: 0;
+}
+.middle{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+.posting-profile-name span{
+  margin: 0;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 0.9rem;
+}
+
+.shared-details{
+  display: flex;
+  flex-direction: row;
+}
+
+.shared-details span{
+  font-size: 0.5rem;
+  opacity: 0.7;
+  margin-right: 4px;
+}
+
+.right{
+  display: flex;
+  justify-content: space-between;
+  min-width: 70px;
+  max-width: 70px;
+  padding-top: 5px;
+  width: 100%;
+  flex: 0;
+  margin: 4px 10px 0 4px;
+}
+.right i{
+  opacity: 0.7;
+}
+
+.post-title{
+  width: 100%;
+  height: auto;
+}
+
+.post-title p{
+  margin: 10px;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.post-body{
+  width: 100%;
+  height: auto;
+}
+.post-body p{
+  margin: 10px;
+  padding: 0;
+}
+
+.post-likes-comments{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-likes-comments span {
+  margin: 10px;
+  font-size: 0.7rem;
+  opacity: 0.700;
+}
+
+.post-reaction{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.post-reaction div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0;
+  font-size: 1.2rem; 
+  opacity: 0.7;
+  padding: 8px;
+}
+
+.post-reaction div:hover{
+  background-color: lightgray;
+}
+
+.pop-up{position: absolute;
+  bottom: 100%; /* Position the popup above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1;
+  
+}
