@@ -97,8 +97,8 @@ function Home  () {
           <Create/>
           <Story/>
         </div>
-        {error&&<div className="error">{error}</div>}
-        {isLoading&&<div>Loading...</div>}
+        //{error&&<div className="error">{error}</div>}
+        //{isLoading&&<div>Loading...</div>}
         {data&&data.map((post)=>{ return <Post 
         key ={post.id}
         post={post}/>})}
